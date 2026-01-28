@@ -1,0 +1,176 @@
+:root {
+    --font-family: 'Outfit', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-heavy: 600;
+    --font-weight-light: 300;
+}
+
+body {               
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: var(--font-family);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 350px;
+    height: auto;
+    color: white;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.card-content h2 {
+    font-weight: var(--font-weight-heavy);
+    padding-bottom: 0;
+}
+
+.card-content h2 span {
+    color: white;  
+}
+.card-content h2 span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.card-content p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
+.card a{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+    line-height: 0;
+}
+
+.card a:hover {
+    cursor: pointer;
+}
+
+.card a::after,
+.card a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.card a::after {
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.card a::before {
+    background: url(images/icon-view.svg) no-repeat center;
+}
+
+.card a:hover::after,
+.card a:hover::before {
+    opacity: 1;
+}
+
+.trade-value {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+span {
+    color: hsl(178, 100%, 50%)
+}
+
+.ethirium-value {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ethirium-value img {
+    margin-right: 10px;
+}
+
+.time-left img {
+    margin-right: 10px;
+}   
+.time-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.creator img {
+    margin-right: 20px;
+}
+
+.avatar-img {
+    width: 30px;
+    height: 30px;
+}
+
+.creator span {
+    color: white;
+}
+
+.creator span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
